@@ -16,7 +16,6 @@
 		0167074627EDF6F400A79249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0167074527EDF6F400A79249 /* Assets.xcassets */; };
 		0167074927EDF6F400A79249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0167074727EDF6F400A79249 /* LaunchScreen.storyboard */; };
 		0167075127EDF82400A79249 /* TextFeild+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167075027EDF82400A79249 /* TextFeild+Extension.swift */; };
-		0167075427EE0FCA00A79249 /* TextFieldHideKeyboard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0167075327EE0FCA00A79249 /* TextFieldHideKeyboard+Extension.swift */; };
 		01ED064327EF2419000C9CA8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ED064227EF2419000C9CA8 /* Service.swift */; };
 		01ED064527EF2894000C9CA8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01ED064427EF2894000C9CA8 /* Model.swift */; };
 		0797AC57E155F9090B4012B9 /* Pods_In_GameTestTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54AE4CA4723BF7C2191F2372 /* Pods_In_GameTestTask.framework */; };
@@ -34,7 +33,6 @@
 		0167074827EDF6F400A79249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0167074A27EDF6F400A79249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0167075027EDF82400A79249 /* TextFeild+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextFeild+Extension.swift"; sourceTree = "<group>"; };
-		0167075327EE0FCA00A79249 /* TextFieldHideKeyboard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextFieldHideKeyboard+Extension.swift"; sourceTree = "<group>"; };
 		01ED064227EF2419000C9CA8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		01ED064427EF2894000C9CA8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1F16DA87556C399E84987C76 /* Pods-In.GameTestTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-In.GameTestTask.release.xcconfig"; path = "Target Support Files/Pods-In.GameTestTask/Pods-In.GameTestTask.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				0167075027EDF82400A79249 /* TextFeild+Extension.swift */,
-				0167075327EE0FCA00A79249 /* TextFieldHideKeyboard+Extension.swift */,
 				0126987027EFBCC200C22EBE /* GradientColor.swift */,
 				0126987227EFBD0B00C22EBE /* UIView+ex.swift */,
 			);
@@ -236,7 +233,6 @@
 				0167074127EDF6F100A79249 /* MainViewController.swift in Sources */,
 				0126987327EFBD0B00C22EBE /* UIView+ex.swift in Sources */,
 				0167075127EDF82400A79249 /* TextFeild+Extension.swift in Sources */,
-				0167075427EE0FCA00A79249 /* TextFieldHideKeyboard+Extension.swift in Sources */,
 				0167073D27EDF6F100A79249 /* AppDelegate.swift in Sources */,
 				0126986F27EFA67E00C22EBE /* LabelCollectionViewCell.swift in Sources */,
 				0167073F27EDF6F100A79249 /* SceneDelegate.swift in Sources */,

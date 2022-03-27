@@ -61,8 +61,6 @@ private extension LabelCollectionViewCell {
         }
     }
     
-    
-    
     func makeLabel() -> UILabel {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -73,7 +71,6 @@ private extension LabelCollectionViewCell {
     
     func makeGradientView() -> GradientView {
         let view = GradientView(from: .top, to: .bottom, startColor: UIColor.red.withAlphaComponent(0.6), endColor: UIColor.purple.withAlphaComponent(0.6))
-//        view.layer.frame = bounds
         contentView.insertSubview(view, at: 0)
         view.alpha = 0
         
