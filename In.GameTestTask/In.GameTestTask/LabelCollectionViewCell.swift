@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 final class LabelCollectionViewCell: UICollectionViewCell {
     static let reuseIdentifier = String(describing: self)
@@ -54,12 +55,13 @@ private extension LabelCollectionViewCell {
     
     func prepareUI() {
         contentView.addSubview(label)
-        
-        NSLayoutConstraint.activate([
-            label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Constant.sideInset),
-            label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -Constant.sideInset),
-            label.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)])
+        label.snp.makeConstraints { make in
+            make.left.right.equalToSuperview().inset(Constant.sideInset)
+            make.centerY.equalToSuperview()
+        }
     }
+    
+    
     
     func makeLabel() -> UILabel {
         let label = UILabel()
