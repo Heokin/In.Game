@@ -8,17 +8,6 @@
 import Foundation
 import UIKit
 
-extension ViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
-    }
-    
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-        if self.searchTextField.text == "" {
-            self.searchTextField.placeholder = "Coctail name"
-        }
-    }
+extension MainViewController {
+ 
 }

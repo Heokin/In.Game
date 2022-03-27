@@ -7,18 +7,10 @@
 
 import Foundation
 
-struct CoctailName: Codable {
-    var drinks: [Drinks]
+struct DrinksList: Codable {
+    var drinks: [Drink]
 }
 
-struct Drinks: Codable {
+struct Drink: Codable {
     var strDrink: String?
-    var idDrink: String?
 }
-
-enum CodingKeys: String, CodingKey {
-    case strDrink = "strDrink"
-    case idDrink = "idDrink"
-}
-
-

@@ -8,20 +8,27 @@
 import Foundation
 import Alamofire
 
-class Service {
+protocol Service {
+    typealias Closure = ([Drink]) -> ()
     
-    fileprivate var baseUrl = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic"
-    
-    func getCoctailName() {
+    func getDrinks(completion: @escaping Closure)
+}
+
+final class ServiceImpl {
+    private var baseUrl = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic"
+}
+
+// MARK: - Service
+extension ServiceImpl: Service {
+    func getDrinks(completion: @escaping Closure) {
         AF.request(baseUrl).responseJSON { response in
-            print (response)
             guard let data = response.data else { return }
             do {
-                let drinks = try? JSONDecoder().decode(CoctailName.self, from: data)
-                print(drinks?.drinks.first?.strDrink)
-                
+                let drinksList = try JSONDecoder().decode(DrinksList.self, from: data)
+                completion(drinksList.drinks)
             } catch {
                 print("error decoding == \(error)")
+                completion([])
             }
         }
     }
